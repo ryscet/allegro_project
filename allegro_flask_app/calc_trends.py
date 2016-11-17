@@ -42,7 +42,7 @@ def heatmap(df):
      
     # Count the number of sales in price category which occurs in each month
     count_df = parsed.groupby(["price", "month_date"]).size().reset_index(name="number_of_sales")
-    fig = plt.figure(figsize = (1.4,7))
+    fig = plt.figure(figsize = (18,12))
     
     # Plot it
     ax = sns.heatmap(count_df.pivot('price', 'month_date', 'number_of_sales'), yticklabels = edges)
@@ -51,11 +51,15 @@ def heatmap(df):
     ax.set_title('History of Macbook sales on Allegro')
     ax.invert_yaxis()
     plt.yticks(rotation=0) 
-        
+
     fig.savefig('static/plots/heatmap.jpg', dpi = 100)
+    print('Figure saved')        
 
     
 def create_heatmap():
     """Loads the sqlite db into pandas, processes data ans saves figure into static/plots folder of the flask app."""
     heatmap(load_db())
+
+if __name__ == '__main__':
+    create_heatmap()
     
