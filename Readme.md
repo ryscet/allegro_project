@@ -1,4 +1,6 @@
-Project scrapes allegro archive and analyzes trends in sales history,
+Allegro project
+---------------
+This project scrapes allegro archive and analyzes trends in sales history,
 Scrapy is used for web scraping. Flask is used to diplay the results, computed with pandas.
 Scrapy saves the data to sqlite db (AllegroSales.db), flask reads it from there.
 Project is running in docker.
