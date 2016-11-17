@@ -1,0 +1,30 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+<div id="db_table">
+  <table class="scroll" width="100%" border="1">
+      <thead>
+        <tr>
+          <th scope = "col">Product description</th>
+          <th scope="col">Price(PLN)</th>
+          <th scope="col">Date of sale</th>
+        </tr>
+      </thead>
+
+    {% for entry in entries %}
+      <tr>
+        <td class = "p_description"> {{ entry.offer_title }} </td>
+        <td class = "p_info">{{ entry.price|safe }}</td>
+        <td class = "p_info">{{ entry.date_of_sale|safe }}</td>
+      </tr>
+
+
+    {% else %}
+      <li><em>No entries here so far. Make sure to run scrapy crawl which populates the database!</em></li>
+    {% endfor %}
+
+  </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Allegro crawler</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div id="page">
+      <h1>Allegro sales history</h1>
+     
+      {% for message in get_flashed_messages() %}
+        <div class=flash>{{ message }}</div>
+      {% endfor %}
+      {% block body %}{% endblock %}
+    </div>
+<div class = "buttons">
+<form action="/plots" method="get" >
+  <input type="submit" value="calculate trends"></input>
+
+</form>
+</div>
+  </body>
+</html>
