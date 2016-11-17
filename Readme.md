@@ -16,7 +16,7 @@ $ docker-compose up
 On mac and windows check the vm ip
 $ docker-machine ip
 
-in the browser go to <docker-machine ip>:5000
+in the browser go to [docker-machine ip]:5000
 
 Scrapy instructions
 -------------------
