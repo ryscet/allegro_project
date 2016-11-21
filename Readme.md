@@ -38,6 +38,8 @@ Run scrapy from the uppermost project directory (allegro_project/)
 
 `$ scrapy crawl crawl_allegro`
 
-
+Sales Heatmap
+-------------
+This heatmap is produced from the data scraped from allegro, and is visible in the flask app under '/plots' url.
 ![alt text](https://github.com/ryscet/allegro_project/blob/master/allegro_flask_app/static/plots/heatmap.jpg "Sales Heatmap")
 
