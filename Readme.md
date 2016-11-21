@@ -36,4 +36,4 @@ Scrapy instructions
 The sqlite db is already in the project. However, it can be updated.
 Run scrapy from the uppermost project directory (allegro_project/)
 
-$ scrapy crawl crawl_allegro 
+`$ scrapy crawl crawl_allegro`
