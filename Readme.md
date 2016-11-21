@@ -1,22 +1,35 @@
 Allegro project
 ---------------
-This project scrapes allegro archive and analyzes trends in sales history,
-Scrapy is used for web scraping. Flask is used to diplay the results, computed with pandas.
+This project scrapes allegro archive and analyzes trends in sales history.
+
+
+Scrapy is used for web scraping. 
+
+
 Scrapy saves the data to sqlite db (AllegroSales.db), flask reads it from there.
+
+
+Flask is used to diplay the results in a web-app.
+
+
 Project is running in docker.
 
 
 
 Instructions for docker build
 -----------------------------
-cd to allegro_project/allegro_flask_app
-$ docker-compose build
-$ docker-compose up
 
-On mac and windows check the vm ip
-$ docker-machine ip
 
-in the browser go to [docker-machine ip]:5000
+`$ docker pull ryscet/allegroproject_web`
+
+`$ docker run -p 5000:5000 ryscet/allegroproject_web`
+
+For linux go to localhost:5000 in the browser
+
+For mac and windows check the ip of the virtual machine:
+
+`$ docker-machine ip`
+and enter it instead of local host.
 
 Scrapy instructions
 -------------------
