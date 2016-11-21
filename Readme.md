@@ -45,7 +45,7 @@ This heatmap is produced from the data scraped from allegro, and is visible in t
 
 The color represents the number of sold items. 
 
-x-axis respresents the history, binned into month-long periods. 
+x-axis respresents the history, binned into month-long bins. 
 
 y-axis respresents price range bins. 
 
