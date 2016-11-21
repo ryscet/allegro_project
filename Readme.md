@@ -43,3 +43,9 @@ Sales Heatmap
 This heatmap is produced from the data scraped from allegro, and is visible in the flask app under '/plots' url.
 ![alt text](https://github.com/ryscet/allegro_project/blob/master/allegro_flask_app/static/plots/heatmap.jpg "Sales Heatmap")
 
+The color represents the number of sold items. 
+
+x-axis respresents the history, binned into month-long periods. 
+
+y-axis respresents price range bins. 
+
