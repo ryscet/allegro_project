@@ -37,3 +37,7 @@ The sqlite db is already in the project. However, it can be updated.
 Run scrapy from the uppermost project directory (allegro_project/)
 
 `$ scrapy crawl crawl_allegro`
+
+
+![alt text]("https://github.com/ryscet/allegro_project/blob/master/allegro_flask_app/static/plots/heatmap.jpg")
+
